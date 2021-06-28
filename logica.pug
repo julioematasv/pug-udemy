@@ -6,3 +6,14 @@ html(lang="es-es")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Logica
   body 
+    - const misClases = ["clase1", "clase2", "clase3"]
+    div(data-status=`${10>15 ? "Aprobado" : "Rechazado"}`)
+      p Div Rechazado
+    div(class=misClases)
+      p Div con tres clases
+    div(class=misClases[0])
+      p Párrafo con la clase 1
+    div(class=misClases[1])
+      p Párrafo con la clase 2
+    div(class=misClases[2])
+      p Párrafo con la clase 3
