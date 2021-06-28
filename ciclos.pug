@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Ciclos
+  body 
+    ul
+      each fruta in ["Manzana", "Pera", "Platano", "Piña", "Sandía"]
+        li= fruta
+      hr 
+      each fruta, indice in ["Manzana", "Pera", "Platano", "Piña", "Sandía"]
+        li= indice + ".- " + fruta
+      hr 
+      - frutas = ["Manzana", "Pera", "Platano", "Piña", "Sandía", "Fresa"]
+      each fruta, indice in frutas
+       li= indice + ".- " + fruta
+
+      hr 
+    p Iterar con objetos 
+    ul 
+      - frutas = {"Manzana": 3, "Pera": 2.5, "Platano": 5}
+      each precio, fruta in frutas 
+        li= fruta + " $ " + precio 
+    hr
+    p También podemos usar el ciclo for 
+    ul 
+      - frutas = {"Manzana": 3, "Pera": 2.5, "Platano": 5}
+      each precio, fruta in frutas 
+        li= fruta + " $ " + precio 
+
+
