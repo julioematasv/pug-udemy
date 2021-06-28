@@ -1,8 +1,7 @@
 ## Curso de PUG de Udemy 
 ![imagen de PUG][1]
+![pug](https://user-images.githubusercontent.com/23408214/123588674-66157980-d7e8-11eb-839f-8979dc974c43.jpg)
 
-
-  [1]: #file:4cd6936d-3bf9-038d-2516-f46e2577e661
   
 ### Practicas sobre preprocesador para HTML.
 
